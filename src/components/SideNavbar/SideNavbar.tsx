@@ -7,7 +7,7 @@ interface SideNavbarProps {
 const SideNavbar = ({ isOpen }: SideNavbarProps) => {
   return (
     <div
-      className={`bg-secondaryNavbar px-[10px] py-4 min-w-[224px] flex flex-col gap-6 lg:sticky  h-screen fixed z-10 transition-transform ${
+      className={`bg-secondaryNavbar px-[10px] py-4 min-w-[224px] flex flex-col gap-6 lg:sticky top-0 h-screen fixed z-10 transition-transform ${
         isOpen ? "" : "transform -translate-x-full"
       }`}
     >
