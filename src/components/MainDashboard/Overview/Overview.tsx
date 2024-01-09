@@ -13,12 +13,12 @@ const Overview = () => {
       <div className="flex justify-between items-center">
         <h2 className="text-[#1A181E] text-xl font-medium">Overview</h2>
         {/* TODO: add dropdown here */}
-        <Select>
+        <Select defaultValue={'lastMonth'}>
           <SelectTrigger className="w-[137px] text-[#4D4D4D] text-base">
-            <SelectValue placeholder="Select" />
+            <SelectValue placeholder="" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="lastMonth" defaultChecked={true}>
+            <SelectItem value="lastMonth">
               Last Month
             </SelectItem>
             <SelectItem value="threeMonth">Last 3 Months</SelectItem>
